@@ -1,4 +1,6 @@
 <html>
 <h1> Today we are going to learn about HTML </h1>
-<h3> HTML is a programming code that allows people to create  games, websites, apps and many more things </h3> <em> that allows people to create games, websites, apps and many more things </em>
+<h3> HTML is a programming code that allows <em> people to create  games, websites, apps and many more things </em> </h3>
+<p> The full Form of HTML is: </p>
+<p> Hyper Text Marked Language <p>
 </html>
