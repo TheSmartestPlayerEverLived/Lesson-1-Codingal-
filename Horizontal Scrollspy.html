@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Horizontal Scrollspy Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            position: relative;
+        }
+        .scrollspy-example {
+            position: relative;
+            height: 200px;
+            margin-top: .5rem;
+            overflow: auto;
+        }
+        .nav-pills .nav-link {
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target="#navbar-example" data-offset="0">
+    <div class="container">
+        <h2>Bootstrap Horizontal Scrollspy Example</h2>
+        <p>This example demonstrates the horizontal scrollspy functionality in Bootstrap. Scroll the content below to see the active link change in the navigation bar.</p>
+        <ul class="nav nav-pills" id="navbar-example">
+            <li class="nav-item">
+                <a class="nav-link" href="#section1">Section 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section2">Section 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section3">Section 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section4">Section 4</a>
+            </li>
+        </ul>
+
+        <div class="scrollspy-example mt-3 p-3 border">
+            <h4 id="section1">Section 1</h4>
+            <p>Content for section 1...</p>
+            <h4 id="section2">Section 2</h4>
+            <p>Content for section 2...</p>
+            <h4 id="section3">Section 3</h4>
+            <p>Content for section 3...</p>
+            <h4 id="section4">Section 4</h4>
+            <p>Content for section 4...</p>
+        </div>
+    </div>
+</body>
+</html>
