@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Arrays</h2>
+        <p>An array is a special variable, which can hold more than one value at a time.</p>
+        <p>If you have a list of items (a list of car names, for example), storing the cars in single variables could look like this:</p>
+        <pre>
+            var car1 = "Saab";
+            var car2 = "Volvo";
+            var car3 = "BMW";
+        </pre>
+        <p>However, this is not efficient. If you want to store more cars, you have to create new variables for each car:</p>
+        <pre>
+            var car4 = "Toyota";
+            var car5 = "Honda";
+        </pre>
+        <p>To solve this problem, JavaScript provides arrays.</p>
+        <p>An array can hold many values under a single name, and you can access the values by referring to an index number.</p>
+        <h3>Creating an Array</h3>
+        <p>In JavaScript, arrays are written with square brackets [].</p>
+        <pre>
+            var cars = ["Saab", "Volvo", "BMW"];
+        </pre>
+        <h3>Accessing Array Elements</h3>
+        <p>You access an array element by referring to the index number.</p>
+        <pre>
+            var cars = ["Saab", "Volvo", "BMW"];
+            var firstCar = cars[0]; // Saab
+        </pre>
+        <h3>Modifying Array Elements</h3>
+        <p>You can change an array element by referring to the index number.</p>
+        <pre>
+            var cars = ["Saab", "Volvo", "BMW"];
+            cars[0] = "Toyota"; // Now the first car is Toyota
+        </pre>
+        <h3>Array Properties and Methods</h3>
+        <p>Arrays come with a set of built-in properties and methods. For example,
+        you can use the <code>length</code> property to get the number of elements in an array:</p>
+        <pre>
+            var cars = ["Saab", "Volvo", "BMW"];
+            var numberOfCars = cars.length; // 3
+        </pre>
+        <p>And you can use methods like <code>push()</code> to add new elements to the end of an array:</p>
+        <pre>
+            var cars = ["Saab", "Volvo", "BMW"];
+            cars.push("Toyota"); // Now cars is ["Saab", "Volvo", "BMW", "Toyota"]
+        </pre>
+        <h3>Looping Through an Array</h3>
+        <p>You can loop through the elements of an array using a <code>for</code> loop:</p>
+
+        <pre>
+            var cars = ["Saab", "Volvo", "BMW"];
+            for (var i = 0; i < cars.length; i++) {
+                console.log(cars[i]);
+            }
+        </pre>
+        <p>This will print each car name to the console.</p>
+        <p>Arrays are a powerful way to store and manage collections of data in JavaScript!</p>
+        <p>Here are some common array methods:</p>
+        <ul>
+            <li><code>push()</code> - Adds an element to the end of the array</li>
+            <li><code>pop()</code> - Removes the last element from the array</li>
+            <li><code>shift()</code> - Removes the first element from the array</li>
+            <li><code>unshift()</code> - Adds an element to the beginning of the array</li>
+        </ul>
+        document.write("<h3>Example:</h3>");
+        var fruits = ["Apple", "Banana", "Mango"];
+        for (var i = 0; i < fruits.length; i++) {
+            document.write(fruits[i] + "<br>");
+        }
+        
+    </body>
+</html>
