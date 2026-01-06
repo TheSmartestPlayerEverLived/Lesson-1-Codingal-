@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+    <h2>Object Data Structure and Array in JavaScript</h2>
+    <script>
+        // Creating an object
+        var person = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 30,
+            fullName: function() {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+
+        // Accessing object properties
+        document.write("First Name: " + person.firstName + "<br>");
+        document.write("Last Name: " + person.lastName + "<br>");
+        document.write("Age: " + person.age + "<br>");
+        document.write("Full Name: " + person.fullName() + "<br><br>");
+
+        // Creating an array
+        var colors = ["Red", "Green", "Blue"];
+        
+        // Accessing array elements
+        document.write("First Color: " + colors[0] + "<br>");
+        document.write("Second Color: " + colors[1] + "<br>");
+        document.write("Third Color: " + colors[2] + "<br>");
+    </script>
+</body>
+</head>
+</html>
