@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Array Sort And Reverse</title>
+    </head>
+    <body>
+        <h2>JavaScript Array Sort And Reverse</h2>
+        <p>Click the button to sort the array in descending order and ascending order.</p>
+        <button onclick="ascending()">Ascending</button>
+        <button onclick="descending()">Descending</button>
+
+        <p id="result"></p>
+
+        <script>
+            var points = [40, 100, 1, 5, 25, 10];
+
+            document.getElementById("result").innerHTML = points
+            function ascending() {
+                points.sort(function(a, b){return a - b});
+                document.getElementById("result").innerHTML = "Sorted in Ascending Order: " + points;
+            }
+            function descending() {
+                points.sort(function(a, b){return b - a});
+                document.getElementById("result").innerHTML = "Sorted in Descending Order: " + points;
+            }
+        </script>
+    </body>
+</html>
