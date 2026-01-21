@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Click the button to map and arrange an array.</p>
+        <button onclick="myfunction()">Map and Arrange</button>
+        <p id="result">
+        </p>
+        <script>
+            function myfunction()
+            {
+                var arr = [6, 7, 67, 670, 6767, 67670, 676767];
+                var mappedArr = arr.map(function(val) {
+                    return val * 10 / 10;
+                });
+                mappedArr.sort(function(a, b) {
+                    return a - b;
+                });
+                document.getElementById("result").innerHTML = mappedArr;
+            }
+        </script>
+    </body>
+</html>
