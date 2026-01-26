@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h2>Handle Errors In JavaScript</h2>
+
+        <p>This example demonstrates how to handle errors using try...catch in JavaScript.</p>
+
+        <p id="result"></p>
+
+        <script>
+            function divide(a, b) {
+                if (b === 0) {
+                    throw new Error("Division by zero is not allowed.");
+                }
+                return a / b;
+            }
+
+            try {
+                let result = divide(10, 0);
+                document.getElementById("result").innerHTML = result;
+            } catch (error) {
+                document.getElementById("result").innerHTML = error.message;
+            }
+        </script>
+    </body>
+</html>
